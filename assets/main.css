@@ -1,0 +1,67 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    margin: 10vh auto;
+    max-width: 575px;
+}
+.tabs{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.tab-item{
+    flex: 1;
+    padding: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: rgba(23, 66, 184, 0.5);
+    border-bottom: 4px solid white;
+    cursor: pointer;
+    font-weight: 600;
+}
+.tab-item.active{
+    color: rgba(23, 66, 184, 1);
+}
+.tab-item:hover{
+    background-color: rgba(23, 66, 184, 0.05);
+    border-bottom: 4px solid rgba(23, 66, 184, 0.15);
+    border-radius: 3px;
+    color: rgba(23, 66, 184, 1);
+    transition: all 0.3s linear;
+}
+
+.tab-icon{
+    width: 20px;
+    height: 20px;
+}
+.line{
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background-color: rgba(23, 66, 184, 1);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+.panels{
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.panel-item{
+    display: none;
+}
+.panel-item h2{
+    margin-bottom: 20px;
+}
+.panel-item.active{
+    display: block;
+}
