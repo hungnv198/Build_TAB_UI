@@ -29,6 +29,7 @@ html{
 }
 .tab-item.active{
     color: rgba(23, 66, 184, 1);
+    background-color: rgba(23, 66, 184, 0.15);
 }
 .tab-item:hover{
     background-color: rgba(23, 66, 184, 0.05);
